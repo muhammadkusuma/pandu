@@ -13,11 +13,15 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            // Foreign key nullable, set null jika divisi dihapus
+            $table->foreignId('division_id')->nullable()->constrained('divisions')->nullOnDelete()->comment('ID divisi pengguna');
+            $table->string('full_name')->comment('Nama lengkap pengguna');
+            $table->string('email')->unique()->comment('Alamat email pengguna');
+            $table->timestamp('email_verified_at')->nullable()->comment('Waktu verifikasi email');
+            $table->string('password')->comment('Kata sandi pengguna');
+            $table->enum('role', ['admin', 'contributor', 'viewer'])->default('viewer')->comment('Peran pengguna dalam sistem');
+            $table->boolean('is_active')->default(true)->comment('Status aktif pengguna');
+            $table->rememberToken()->comment('Token untuk mengingat sesi pengguna');
             $table->timestamps();
         });
 
