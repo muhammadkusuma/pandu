@@ -32,7 +32,8 @@
                 </div>
                 <div class="flex items-center gap-4">
                     <a href="{{ route('landingpage.about') }}" class="text-sm font-bold text-blue-600">Tentang</a>
-                    <a href="{{ route('landingpage.help') }}" class="text-sm font-medium text-slate-600 hover:text-blue-600">Bantuan</a>
+                    <a href="{{ route('landingpage.help') }}"
+                        class="text-sm font-medium text-slate-600 hover:text-blue-600">Bantuan</a>
                     <a href="{{ route('auth.login') }}"
                         class="bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 px-4 py-2 rounded-lg text-sm font-medium transition">Login
                         Staff</a>
@@ -51,7 +52,7 @@
             <h2 class="text-xl font-bold text-slate-900 mb-4">Latar Belakang</h2>
             <div class="prose text-slate-600 max-w-none">
                 <p class="mb-4">
-                    PANDU diinisiasi oleh Divisi Teknologi Informasi sebagai respons terhadap kebutuhan akses informasi
+                    PANDU diinisiasi oleh Divisi IT sebagai respons terhadap kebutuhan akses informasi
                     yang cepat dan akurat di lingkungan Rumah Sakit. Sistem ini dirancang sebagai <strong>Single Source
                         of Truth</strong> (SSOT) untuk seluruh Standar Operasional Prosedur (SOP), panduan teknis, dan
                     arsip dokumen.
@@ -63,34 +64,7 @@
             </div>
         </div>
 
-        <h3 class="text-xl font-bold text-slate-900 mb-6 text-center">Tim Pengembang (Divisi IT)</h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white p-6 rounded-xl border border-slate-200 text-center">
-                <div class="w-20 h-20 bg-slate-200 rounded-full mx-auto mb-4 overflow-hidden">
-                    <img src="https://ui-avatars.com/api/?name=Kepala+IT&background=0D8ABC&color=fff"
-                        alt="Ka instalasi">
-                </div>
-                <h4 class="font-bold text-slate-900">Dr. Teknik</h4>
-                <p class="text-xs text-blue-600 uppercase font-bold tracking-wide mb-2">Kepala Instalasi</p>
-                <p class="text-sm text-slate-500">Penanggung Jawab Sistem & Kebijakan.</p>
-            </div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200 text-center">
-                <div class="w-20 h-20 bg-slate-200 rounded-full mx-auto mb-4 overflow-hidden">
-                    <img src="https://ui-avatars.com/api/?name=Wira+Ade&background=0D8ABC&color=fff" alt="Wira">
-                </div>
-                <h4 class="font-bold text-slate-900">Wira Ade</h4>
-                <p class="text-xs text-blue-600 uppercase font-bold tracking-wide mb-2">Lead Developer</p>
-                <p class="text-sm text-slate-500">Arsitek Sistem & Fullstack Engineer.</p>
-            </div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200 text-center">
-                <div class="w-20 h-20 bg-slate-200 rounded-full mx-auto mb-4 overflow-hidden">
-                    <img src="https://ui-avatars.com/api/?name=Support+IT&background=0D8ABC&color=fff" alt="Support">
-                </div>
-                <h4 class="font-bold text-slate-900">Tim Support</h4>
-                <p class="text-xs text-blue-600 uppercase font-bold tracking-wide mb-2">Content Writer</p>
-                <p class="text-sm text-slate-500">Penulis dokumentasi dan panduan teknis.</p>
-            </div>
-        </div>
+
     </main>
 
     <footer class="bg-slate-900 text-slate-300 py-8 mt-auto">

@@ -28,9 +28,9 @@
         </div>
 
         <div class="p-8">
-            <form action="admin-dashboard.html" method="GET">
+            <form action="#" method="GET">
                 <div class="mb-4">
-                    <label class="block text-sm font-medium text-slate-700 mb-1">NIP / Email</label>
+                    <label class="block text-sm font-medium text-slate-700 mb-1">NIK / Username</label>
                     <div class="relative">
                         <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-slate-400">
                             <i class="ph ph-user"></i>
@@ -58,7 +58,7 @@
             </form>
 
             <div class="mt-6 text-center">
-                <a href="help.html" class="text-sm text-slate-500 hover:text-blue-600">Lupa password? Hubungi IT</a>
+                <a href="#" class="text-sm text-slate-500 hover:text-blue-600">Lupa password? Hubungi IT</a>
             </div>
         </div>
 

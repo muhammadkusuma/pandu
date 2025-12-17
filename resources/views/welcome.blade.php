@@ -23,7 +23,7 @@
                     </div>
                     <div>
                         <h1 class="text-xl font-bold text-slate-900 tracking-tight">PANDU</h1>
-                        <p class="text-[10px] text-slate-500 uppercase tracking-wider font-semibold">RS. Prototype IT</p>
+                        <p class="text-[10px] text-slate-500 uppercase tracking-wider font-semibold">RS.XYZ</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-4">
@@ -200,7 +200,7 @@
                 <p class="text-xs text-slate-500">Sistem Manajemen Pengetahuan Rumah Sakit</p>
             </div>
             <div class="text-sm text-slate-500 text-center md:text-right">
-                &copy; 2023 Instalasi Teknologi Informasi RS. <br>
+                &copy; 2025 Divisi IT RS. XYZ<br>
                 Internal Use Only.
             </div>
         </div>

@@ -50,8 +50,8 @@
                     <i class="ph ph-question text-blue-600"></i> Saya lupa password akun PANDU?
                 </h3>
                 <p class="text-slate-600 text-sm">
-                    Untuk alasan keamanan, reset password hanya bisa dilakukan oleh Admin IT. Silakan hubungi ekstensi
-                    <strong>119</strong> atau datang ke ruangan IT di Gedung A Lantai 2.
+                    Untuk alasan keamanan, reset password hanya bisa dilakukan oleh Admin IT. Silakan hubungi 
+                    <strong>NOMOR TELP IT</strong> atau datang ke ruangan IT di Gedung XYZ Lantai 1.
                 </p>
             </div>
 
@@ -60,8 +60,8 @@
                     <i class="ph ph-wifi-slash text-blue-600"></i> Bagaimana cara lapor internet mati?
                 </h3>
                 <p class="text-slate-600 text-sm">
-                    Cek terlebih dahulu lampu indikator pada modem di ruangan Anda. Jika lampu merah, silakan buat tiket
-                    pelaporan melalui menu "Kategori IT > Jaringan" atau WA ke Helpdesk IT.
+                    Cek terlebih dahulu lampu indikator di ruangan Anda. Jika tidak terkoneksi, silakan buat tiket
+                    pelaporan melalui menu "Pelaporan Kasus" atau Telp ke IT.
                 </p>
             </div>
 
@@ -71,7 +71,7 @@
                 </h3>
                 <p class="text-slate-600 text-sm">
                     Beberapa dokumen memiliki status <strong>Internal</strong> yang hanya bisa diakses oleh divisi
-                    terkait. Jika Anda merasa butuh akses, mintalah persetujuan Kepala Ruangan untuk diajukan ke IT.
+                    terkait. Jika Anda merasa butuh akses, mintalah persetujuan Kepala Divisi untuk diajukan ke IT.
                 </p>
             </div>
         </div>
@@ -80,23 +80,19 @@
             class="mt-10 bg-blue-50 border border-blue-100 rounded-xl p-6 flex flex-col md:flex-row items-center justify-between gap-4">
             <div>
                 <h4 class="font-bold text-blue-900">Masih butuh bantuan?</h4>
-                <p class="text-sm text-blue-700">Tim IT siap membantu 24 Jam untuk kendala SIMRS.</p>
+                <p class="text-sm text-blue-700">Tim IT siap membantu untuk kendala SIMRS.</p>
             </div>
             <div class="flex gap-3">
                 <a href="#"
-                    class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-700 flex items-center gap-2">
-                    <i class="ph ph-whatsapp-logo text-lg"></i> WA Helpdesk
-                </a>
-                <a href="#"
                     class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 flex items-center gap-2">
-                    <i class="ph ph-phone text-lg"></i> Ext. 119
+                    <i class="ph ph-phone text-lg"></i> Ext. NO TELP IT
                 </a>
             </div>
         </div>
     </main>
 
     <footer class="bg-slate-900 text-slate-300 py-6 mt-auto text-center text-xs">
-        &copy; 2023 Instalasi Teknologi Informasi RS.
+        &copy; 2025 Divisi IT RS XYZ.
     </footer>
 </body>
 
