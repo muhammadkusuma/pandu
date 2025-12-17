@@ -1,99 +1,74 @@
-<!DOCTYPE html>
-<html lang="id">
+@extends('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bantuan - PANDU RS</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
-</head>
+@section('title', 'Pusat Bantuan - PANDU')
 
-<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+@section('content')
+    <x-landing.hero title="Pusat Bantuan" subtitle="Ketik kendala Anda di bawah atau cari topik manual." :showSearch="true">
+        <span class="text-slate-400 text-xs">Topik populer: Lupa Password, Printer Offline, BPJS Error</span>
+    </x-landing.hero>
 
-    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center gap-3">
-                    <a href="{{ route('landingpage.index') }}" class="flex items-center gap-3">
-                        <div class="bg-blue-600 text-white p-1.5 rounded-lg"><i class="ph ph-first-aid text-2xl"></i>
-                        </div>
-                        <h1 class="text-xl font-bold text-slate-900 tracking-tight">PANDU</h1>
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h3 class="text-xl font-bold text-slate-900 mb-8 text-center">Pertanyaan Umum (FAQ)</h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-xl border border-slate-200 hover:border-blue-400 transition">
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 mt-1">
+                        <i class="ph ph-question text-blue-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 mb-2">Bagaimana cara reset password SIMRS?</h4>
+                        <p class="text-sm text-slate-600 mb-3">
+                            Anda tidak bisa reset sendiri. Harap minta Kepala Ruangan untuk membuat surat permintaan reset
+                            ke IT.
+                        </p>
+                        <a href="#" class="text-sm text-blue-600 font-medium hover:underline">Baca selengkapnya →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl border border-slate-200 hover:border-blue-400 transition">
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 mt-1">
+                        <i class="ph ph-wifi-slash text-red-500 text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 mb-2">WiFi "Staff-RS" tidak bisa connect?</h4>
+                        <p class="text-sm text-slate-600 mb-3">
+                            Pastikan Anda sudah login menggunakan NIP dan password default (tanggal lahir ddmmyyyy).
+                        </p>
+                        <a href="#" class="text-sm text-blue-600 font-medium hover:underline">Lihat panduan koneksi
+                            →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl border border-slate-200 hover:border-blue-400 transition">
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 mt-1">
+                        <i class="ph ph-printer text-orange-500 text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 mb-2">Printer macet / kertas nyangkut?</h4>
+                        <p class="text-sm text-slate-600 mb-3">
+                            Jangan paksa tarik kertas! Buka cover depan dan tarik perlahan sesuai arah roda gigi.
+                        </p>
+                        <a href="#" class="text-sm text-blue-600 font-medium hover:underline">Video Tutorial →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 flex items-center justify-center text-center">
+                <div>
+                    <i class="ph ph-headset text-4xl text-blue-600 mb-3"></i>
+                    <h4 class="font-bold text-slate-900">Masih butuh bantuan?</h4>
+                    <p class="text-sm text-slate-600 mb-4">Hubungi Helpdesk IT langsung.</p>
+                    <a href="https://wa.me/628123456789"
+                        class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition">
+                        Chat WhatsApp
                     </a>
                 </div>
-                <div class="flex items-center gap-4">
-                    <a href="{{ route('landingpage.about') }}" class="text-sm font-medium text-slate-600 hover:text-blue-600">Tentang</a>
-                    <a href="{{ route('landingpage.help') }}" class="text-sm font-bold text-blue-600">Bantuan</a>
-                    <a href="{{ route('auth.login') }}"
-                        class="bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 px-4 py-2 rounded-lg text-sm font-medium transition">Login
-                        Staff</a>
-                </div>
             </div>
         </div>
-    </nav>
-
-    <main class="max-w-3xl mx-auto px-4 py-12 flex-grow">
-        <div class="text-center mb-10">
-            <h1 class="text-2xl font-bold text-slate-900">Pusat Bantuan</h1>
-            <p class="text-slate-500">Pertanyaan yang sering diajukan (FAQ)</p>
-        </div>
-
-        <div class="space-y-4">
-            <div class="bg-white border border-slate-200 rounded-lg p-5">
-                <h3 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
-                    <i class="ph ph-question text-blue-600"></i> Saya lupa password akun PANDU?
-                </h3>
-                <p class="text-slate-600 text-sm">
-                    Untuk alasan keamanan, reset password hanya bisa dilakukan oleh Admin IT. Silakan hubungi 
-                    <strong>NOMOR TELP IT</strong> atau datang ke ruangan IT di Gedung XYZ Lantai 1.
-                </p>
-            </div>
-
-            <div class="bg-white border border-slate-200 rounded-lg p-5">
-                <h3 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
-                    <i class="ph ph-wifi-slash text-blue-600"></i> Bagaimana cara lapor internet mati?
-                </h3>
-                <p class="text-slate-600 text-sm">
-                    Cek terlebih dahulu lampu indikator di ruangan Anda. Jika tidak terkoneksi, silakan buat tiket
-                    pelaporan melalui menu "Pelaporan Kasus" atau Telp ke IT.
-                </p>
-            </div>
-
-            <div class="bg-white border border-slate-200 rounded-lg p-5">
-                <h3 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
-                    <i class="ph ph-file-lock text-blue-600"></i> Kenapa saya tidak bisa akses dokumen tertentu?
-                </h3>
-                <p class="text-slate-600 text-sm">
-                    Beberapa dokumen memiliki status <strong>Internal</strong> yang hanya bisa diakses oleh divisi
-                    terkait. Jika Anda merasa butuh akses, mintalah persetujuan Kepala Divisi untuk diajukan ke IT.
-                </p>
-            </div>
-        </div>
-
-        <div
-            class="mt-10 bg-blue-50 border border-blue-100 rounded-xl p-6 flex flex-col md:flex-row items-center justify-between gap-4">
-            <div>
-                <h4 class="font-bold text-blue-900">Masih butuh bantuan?</h4>
-                <p class="text-sm text-blue-700">Tim IT siap membantu untuk kendala SIMRS.</p>
-            </div>
-            <div class="flex gap-3">
-                <a href="#"
-                    class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 flex items-center gap-2">
-                    <i class="ph ph-phone text-lg"></i> Ext. NO TELP IT
-                </a>
-            </div>
-        </div>
-    </main>
-
-    <footer class="bg-slate-900 text-slate-300 py-6 mt-auto text-center text-xs">
-        &copy; 2025 Divisi IT RS XYZ.
-    </footer>
-</body>
-
-</html>
+    </section>
+@endsection
